@@ -1,0 +1,234 @@
+/* text box section */
+
+#text_box_with_time_calc {
+    position: relative;
+    margin-top: 30px;
+}
+
+#text_box_with_time_calc .duration_timing_box {
+    position: relative;
+    margin-top: 20px;
+}
+
+#text_box_with_time_calc .duration_timing_box button {
+    width: max-content;
+    border: none;
+    outline: none;
+    background: rgb(19, 118, 159);
+    cursor: pointer;
+    min-width: 100px;
+    color: white;
+}
+
+#text_box_with_time_calc .duration_timing_box button:focus {
+    color: black;
+    transform: scale(0.9);
+    color: white;
+}
+
+#text_box_with_time_calc .typing_test_text_nd_statistics_box {
+    position: relative;
+    margin-top: 20px;
+}
+
+
+#text_box_with_time_calc .typing_test_text_nd_statistics_content_box  {
+    position: relative;
+    border: 7px solid black;
+}
+
+#text_box_with_time_calc .typing_test_text_nd_statistics_content_box .statistics_part {
+    width: 100%;
+    border-bottom: 2px solid rgb(47, 79, 79);
+    display: flex;
+    padding-top: 10px;
+}
+
+#text_box_with_time_calc .typing_test_text_nd_statistics_content_box .test_text_part {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: white;
+}
+
+#text_box_with_time_calc .typing_test_text_nd_statistics_content_box .test_text_part h6{
+    letter-spacing: 2px;
+    font-size: 22px;
+}
+
+.button_to_track_and_start {
+    margin-bottom: 10px;
+}
+
+.button_to_track_and_start button {
+    min-width: 120px;
+    height: 30px;
+    background: #13769F;
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    /* margin-left: 70%; */
+} 
+
+.button_to_track_and_start button:active {
+    position: relative;
+    transform: translateY(2px);
+}
+
+.button_to_track_and_start .reset_typing_speed_test {
+    background-color: #1B74E7;
+}
+
+
+/* text box section ends */
+
+/* keyboard********************* */
+
+  .keyboard {
+      text-align: center;
+      font-size: 12px;
+      font-family: sans-serif;
+      position: relative;
+  }
+  
+  .keyboard__row {
+      display: inline-block;
+      height: 2em;
+      margin: 0.2em;
+  }
+  
+  .keyboard__row--h1 {
+      height: 1.7em;
+      line-height: 1em;
+  }
+  
+  .keyboard__row--h3 {
+      height: 3em;
+  }
+  
+  .keyboard__row > * {
+      position: relative;
+      /* background: #333; */
+      background: rgb(51, 51, 51, .6);
+      text-align: center;
+      color: #eee;
+      float: left;
+      border-radius: 0.3em;
+      margin: 0.2em;
+      /* padding: 0.2em; */
+      width: 3em;
+      height: 90%;
+      box-sizing: border-box;
+      cursor: pointer;
+      -webkit-user-select: none;
+      border: 1px solid #444;
+      box-shadow: 0 0.2em 0 0.05em #222;
+      border-bottom-color: #555;
+  }
+  
+  .keyboard__row--h1 > div {
+      width: 2em;
+  }
+  
+  .keyboard__row > div[data-pressed],
+  .keyboard__row > div:active {
+      background: #2a2a2a;
+      color: #aaa;
+      position: relative;
+      top: 0.2em;
+      box-shadow: 0 0 0 0.05em black;
+  }
+  
+  .key--w3 {
+      width: 4em;
+  }
+  
+  .key--w4 {
+      width: 4em;
+  }
+  
+  .key--w5 {
+      width: 5em;
+  }
+  
+  .key--w6 {
+      width: 5em;
+  }
+  
+  .key--space {
+      width: 14em;
+  }
+  
+  .key--double > * {
+      padding-top: 0em;
+      /* padding-top: 0.1em; */
+  }
+  
+  .key--letter {
+      line-height: 2em;
+  }
+  
+  .key--bottom-left > * {
+      position: absolute;
+      text-align: left;
+      bottom: 0.4em;
+      left: 0.4em;
+  }
+  
+  .key--bottom-right > * {
+      position: absolute;
+      text-align: right;
+      bottom: 0.4em;
+      right: 0.4em;
+  }
+  
+  .key--fn > * {
+      font-size: 0.6em;
+      line-height: 1em;
+      padding-top: 1.2em;
+      padding-right: 0.2em;
+      text-align: right;
+      float: right;
+  }
+  
+  .key--word > * {
+      font-size: 0.8em;
+  }
+  
+  .key--arrow--tall > *,
+  .key--arrow > * {
+      font-size: 0.5em;
+      line-height: 3em;
+  }
+  
+  .key--arrow {
+      height: 1.8em;
+      margin-top: 1.7em;
+      line-height: 0.5em;
+  }
+  
+  .key--arrow--tall > * {
+      padding-top: 0.2em;
+  }
+  
+  .keyboard > .keyboard__row {
+      text-align: center;
+  }
+
+
+  /************** keyboard hands******************** */
+  .hands_on_keyboard {
+      position: absolute;
+      bottom: 0px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+  }
+
+@media only screen and (max-width: 1000px)  {
+    .hands_on_keyboard img {
+        width: 100px;
+        height: 100px;
+    }
+}

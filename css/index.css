@@ -1,0 +1,252 @@
+/* For background MintCream */
+/* . {color: #F5FFFA } */
+/* .{color: rgb(245, 255, 250)} */
+/* For menu bar i prefer DarkSlateGray */
+/* .{color: #2F4F4F} */
+/* .{color:rgb(47, 79, 79)}  */
+/* and the menu buttons / letters to be GhostWhite .{color: #F8F8FF} .{color: rgb(248,248,255)} */
+/* Let me know your opinion */
+
+body {
+    background-color: #F5FFFA;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+
+#header {
+    width: 100%;
+    background: #2F4F4F;
+    box-shadow: 1px 1px 10px .5px gray;
+}
+
+#header nav {
+    width: 100%;
+}
+
+@media only screen and (min-width: 991.5px) {
+    #header #navbarSupportedContent {
+        position: absolute;
+        right: 10%;
+    }
+}
+
+#header nav ul li a {
+    text-transform: uppercase;
+    color: #F8F8FF;
+    transition: .4s;
+}
+
+#header nav ul li a:hover {
+    transform: scaleX(1.02);
+}
+
+
+/* type writer */
+.banner_content {
+    position: relative;
+  }
+  
+  .banner_content h3 {
+    /* height: 70px; */
+    border-right: 2px solid green;
+    line-height: 40px;
+    overflow: hidden;
+    animation: moveRight 4s steps(25) infinite, borderBlink 2000ms infinite;
+    /* font-size: 50px; */
+    white-space: nowrap;
+  }
+  
+  .cursor {
+    /* height: 100%; */
+    width: 0px;
+    color: rgb(47, 79, 79);
+  }
+  
+  @keyframes moveRight {
+    0% {
+      width: 0%;
+    }
+  
+    100% {
+      width: 95%;
+    }
+  }
+  
+  @keyframes borderBlink {
+    0%,
+    100% {
+      border-right-color: transparent;
+    }
+  
+    50% {
+      border-right-color: rgb(19, 118, 159);
+    }
+  }
+  
+
+/* type writer ends */
+
+
+
+/* **********banner section************** */
+#banner {
+    position: relative;
+    /* background-color: #269139; */
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: rgb(47, 79, 79);
+}
+.banner_content {
+    position: relative;
+    margin-top: 15px;
+}
+
+.banner_content h3 {
+    /* color: #151578; */
+}
+
+.banner_content li {
+    list-style-type: none;
+}
+
+.banner_content #button-groups {
+    position: relative;
+    padding-top: 20px;
+}
+
+.banner_content #button-groups a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.banner_content #button-groups a button {
+    width: 130px;
+    height: 35px;
+    border: none;
+    outline: none;
+    background: rgb(19, 118, 159);
+    color: #F5FFFA;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: .4s;
+}
+
+.banner_content #button-groups a button:hover {
+    background: #2F4F4F;
+}
+
+/* **********banner section ends************** */
+
+
+/* **********feature section************ */
+
+#features {
+    background-color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+
+#features .feature_list_box {
+    position: relative;
+    padding-top: 10px;
+}
+
+#features .feature_list_box h4 {
+    color: rgb(19, 118, 159);
+}
+/* **********feature section ends************ */
+
+
+/* ************our level section************* */
+
+#our_levels {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#our_levels .level_list {
+    position: relative;
+    padding-top: 10px;
+}
+
+#our_levels .level_list .card {
+    border: none;
+    outline: none;
+    box-shadow: 1px 1px 3px 1px rgb(19, 118, 159);
+}
+
+#our_levels .level_list .card h5 {
+    color: rgb(19, 118, 159);
+}
+
+/* ************our level section ends************* */
+
+
+/* ******************proverb starts***************** */
+#proverb {
+    width: 100%;
+    height: 250px;
+    background-image: url(../images/laptop2.jpeg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+#proverb .proverb_content h3{
+    position: absolute;
+    color: white;
+    z-index: 1220;
+    left: 30%;
+    top: 110px;
+}
+
+#proverb .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background:rgb(19, 118, 159, 0.4);
+}
+
+
+/* ***************frequently asked question************* */
+
+#faq_section {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#faq_section .faq_list {
+    padding-top: 10px;
+}
+
+/* *************frequently asked question ends*********** */
+
+
+/* *************footer starts***************** */
+
+#footer {
+    background: rgb(19, 118, 159);
+    padding-top: 10px;
+}
+
+#footer ul li {
+    list-style-type: none;   
+    float: left;
+    position: relative;
+    padding-left: 10px;
+}
+
+#footer ul li a {
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+}
+
+#footer .copy_right {
+    font-size: 14px;
+    color: white;
+}
+
+/* *************footer ends***************** */

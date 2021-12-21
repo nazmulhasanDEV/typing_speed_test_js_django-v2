@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Typing Test</title>
+
+  <!-- bootstrap-4 link -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    crossorigin="anonymous">
+
+  <!-- custom stylesheet -->
+  <link rel="stylesheet" href="css/index.css">
+
+  <link rel="stylesheet" href="css/login-register.css">
+  <link rel="stylesheet" href="css/keyboard.css">
+
+  <link rel="stylesheet" href="css/typing-test.css">
+
+
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+  <!-- fontawesome cdn link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+
+</head>
+
+<body>
+
+  <!-- header section starts -->
+
+  <section id="header">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="container">
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#" style="color: white;">Logo</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Tutorial</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Login/Register</a>
+                </li>
+              </ul>
+            </div>
+
+          </nav>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- text box with time and other stafs -->
+  <section id="text_box_with_time_calc">
+    <div class="container">
+
+      <div class="row text_box_title">
+        <div class="col-md-12">
+          <h3 class="text-center">Select Duration and Start Typing</h3>
+        </div>
+      </div>
+
+      <div class="row typing_test_text_nd_statistics_box">
+        <div class="col-md-2"></div>
+        <div class="col-md-8 text-center">
+
+          <div class="button_to_track_and_start text-left">
+            <div>
+              <button type="button" class="start_typing_btn" onclick="x(this);">Start Typing</button>
+              <button type="button" class="reset_typing_speed_test" onclick="backToPreviousState();"
+                style="opacity: .3;" disabled>Reset</button>
+            </div>
+          </div>
+
+          <div class="typing_test_text_nd_statistics_content_box">
+
+            <div class="statistics_part">
+              <div class="col-md-3">
+                <div>
+                  <h6 class="text-center" style="opacity: 0;">Duration: <span class="typing_duration_time">00:00</span></h6>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div>
+                  <h6 class="text-center">WPM: <span id="final_wpm"> 0</span></h6>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div>
+                  <h6 class="text-center">Accuracy: <span id="final_accuracy_measur">0%</span></h6>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div>
+                  <h6 class="text-center">Errors: <span class="error_calc">0</span>/<span class="out_of">0</span></h6>
+                </div>
+              </div>
+            </div>
+            <div class="test_text_part">
+              <div class="col-md-12">
+                <h6 class="text-justify" id="sample_text_content">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you</h6>
+              </div>
+              <div class="col-md-12">
+                <textarea name="typed_text" id="typed_text" cols="30" rows="10"></textarea>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+
+    </div>
+  </section>
+  <!-- text box with time and other stafs ends-->
+
+  <!-- result message -->
+  <div id="result_msg_main_box">
+    <div id="msg_box">
+      <div id="result_msg_content">
+        <form>
+          <h1 class="text-center">Congratulations! <i class="fas fa-check-square"></i></h1>
+          <h4>Your typing test summery:</h4>
+          <h6><strong>Total Duration:</strong> <input type="text" name="elapsed_time" id="elapsed_duration_for_res" disabled></h6>
+          <h6><strong>WPM:</strong> <input type="text" name="wpm" id="word_per_minute_for_res" disabled></h6>
+          <h6><strong>Accuracy in %:</strong> <input type="text" name="accuracy" id="accuracy_in_prcntg_res" disabled></h6>
+          <h6><strong>No Of Wrong Typed Chars:</strong> <input type="text" name="no_of_wrong_typed_chars" id="no_wrong_typed_characters_res" disabled></h6>
+
+          <div class="result_summery_btns">
+            <button type="submit" class="submit_res">Save To Track Level</button>
+            <button type="button" class="cancel_res" onclick="hideResultSummerBox()">Cancel & Discard</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- ends result message -->
+
+
+  <!-- header section ends -->
+
+
+  <section id="hands_with_keyboard">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+          <div class="text-center">
+            <img src="images/hands_key/A.png" id="hands_withKeyboard" style="width:80%;" alt="">
+          </div>
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+    </div>
+  </section>
+
+  <br><br><br>
+
+  <!-- footer starts -->
+  <section id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <ul>
+            <li><a href="#">Terms of use</a></li>
+            <li><a href="#">Privacy policy</a></li>
+            <li><a href="#">Cookies policy</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-6">
+          <div>
+            <p class="copy_right">Copyright <i class="far fa-copyright"></i> 2021 Web Desire. All rights
+              reserved.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- footer ends -->
+
+
+  <script src="js/login-register.js"></script>
+
+  <script src="js/typing-test.js"></script>
+  <script src="js/typing-test1.js"></script>
+  <script src="js/countDown.js"></script>
+  <script src="js/typing_test_summery.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

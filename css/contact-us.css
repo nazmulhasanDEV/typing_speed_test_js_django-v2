@@ -1,0 +1,18 @@
+#contact_us {
+    padding-top: 30px;
+}
+.contact_us_title h3 {
+    background: #13769F;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-transform: capitalize;
+}
+
+.main-content {
+    padding-top: 20px;
+}
+
+#address {
+    margin-top: 30px;
+}

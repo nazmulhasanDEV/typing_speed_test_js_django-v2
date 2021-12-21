@@ -1,0 +1,82 @@
+#typed_text {
+    /* visibility: hidden; */
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+
+.current_target_span {
+    background-color: indianred;
+}
+
+.correct_txt {
+    /* background-color: green; */
+    color: green;
+}
+
+.wrong_txt {
+    /* background-color: red; */
+    color: red;
+    text-decoration: underline;
+}
+
+/* ****************result msg box ************************* */
+#result_msg_main_box {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    background-color:  rgb(0,0,0, .3);
+    z-index: 121321;
+    display: none;
+}
+
+#result_msg_main_box #msg_box {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#result_msg_main_box #msg_box #result_msg_content {
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+}
+
+#result_msg_main_box #msg_box #result_msg_content input{
+    border: none;
+    outline: none;
+    background: none;
+}
+
+#result_msg_main_box #msg_box #result_msg_content form .submit_res {
+    border: none;
+    outline: none;
+    padding: 5px;
+    background-color: #13769F;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+#result_msg_main_box #msg_box #result_msg_content form .cancel_res {
+    border: none;
+    outline: none;
+    padding: 5px;
+    background-color: #DA190B;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+#result_msg_main_box #msg_box #result_msg_content h1 {
+    color: green;
+}
+
+.result_summery_btns {
+    padding-top: 10px;
+}
+/* ****************ends result msg box ************************* */

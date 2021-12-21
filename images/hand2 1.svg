@@ -1,0 +1,20 @@
+<svg width="330" height="183" viewBox="0 0 330 183" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g style="mix-blend-mode:lighten" filter="url(#filter0_b_2_2)">
+<rect width="330" height="183" rx="24" fill="url(#pattern0)"/>
+<rect x="0.5" y="0.5" width="329" height="182" rx="23.5" stroke="black"/>
+<rect x="0.5" y="0.5" width="329" height="182" rx="23.5" stroke="black" stroke-opacity="0.2"/>
+<rect x="0.5" y="0.5" width="329" height="182" rx="23.5" stroke="black" stroke-opacity="0.2"/>
+</g>
+<defs>
+<filter id="filter0_b_2_2" x="-4" y="-4" width="338" height="191" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feGaussianBlur in="BackgroundImage" stdDeviation="2"/>
+<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_2_2"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_2_2" result="shape"/>
+</filter>
+<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0_2_2" transform="translate(-0.0116342) scale(0.00330087 0.00595238)"/>
+</pattern>
+</defs>
+</svg>
+

@@ -1,0 +1,87 @@
+Hi,
+
+We are looking for someone to design and build an ecommerce website for us. Our business model is to support local small businesses (restaurants, real estate agencies, retail, etc.) using a responsive website.
+
+Main Features
+The website will provde a restaurant app feature, video playback feature, small business directory service, real estate search feature, retail marketplace, and epub catalog download service to start with.
+
+These small businesses, once registered with us, will receive a dedicated QR CODE which they can use in the storefront windows or on dining tables. Customers who scan it will see either the restaurant's menu (restaurants), agent's website (real estate) or marketplace with possibility of downloading a digital catalog (retail).
+
+Scope
+- Responsive: mobile phones, tablets, pc, large-screen HDTV (for playing the video loops).
+- eCommerce for handling subscriptions based on 3 price plans:
+    - Trial: a one-month free subscription with service lockout upon expiration.
+    - Standard: a rolling 3 month cancel-anytime subscription.
+    - Pro: for businesses with multiple locations and/or screens (20% off each additional screen < 10 screens, 30% off > 10).
+- Google analytics.
+- Strapi CMS, Mongo, graphql.
+- Wix or React+JSS.
+- Timeframe: 1 - 2 months.
+- Secured using best practices.
+- 6 month follow-up support.
+- Unlimited (but within reason) changes during the dev process (1 - 2 months).
+- We need to communicate often so I am looking for a STRONG communicator willing to be in regular contact and respond quickly.
+
+Sitemap Pages
+- Landing
+- Home (authenticated/secured)
+    - Profile
+        - first name, last name, email, nationality (optional), language, phone number, promotions.
+    - Username/password
+    - Preferences
+        - Subscribe to notifications
+            - per business
+            - per product
+            - blogs and articles fron us
+- About us / Contact Us
+- Products and Services
+    - Restaurant
+    - Real Estate
+    - Retail
+    - Tourism (coming soon)
+    - Housing and Construction (coming soon)
+    - Online Academy (coming soon)
+- Jobs
+- Testimonials
+- Signup/Signin/Change password
+- Local offers/promotions
+
+1. Restaurant:
+- A qrcode will redirect users to the restaurant page which uses strapi crm to populate the menu, specials, etc. App design and nav links will be provided (.psd files).
+- Additionally each restaurant should have a dedicated and searchable landing page on our site with contact info/map, business/profile video, and link to their site.
+- Comments/reviews, like/dislike (thumbs up/down) buttons in the menu section.
+- The ability for the restaurant owner to push specials/promotions to platform subscribed customers if they subscribed also to allow notifications from that restaurant.
+- The reservations and takeaway features should be on/off based on whether the restaurant offers it or not. Customizable in profile.
+- Call to action (reservation/call).
+
+2. Real estate:
+- We want to create a Multiple Listing Service (MLS) using the properties from all our partner real estate agents.
+- Agents will have two ways of uploading their listings: a) form-based b) xml based.
+- Our MLS needs a search/filter feature, favorites, etc., the most important features found on MLS websites.
+- Each agent should have a dedicated  and searchable landing page on our site with contact info/map, business/profile video, and link to their site.
+- An authenticated/secure page that plays a video in a loop.
+- The ability for the agent to push specials/promotions to platform subscribed customers if they subscribed also to allow notifications from that agent.
+- Call to action (phone/email).
+
+3. Retail:
+- Each retail store owner should have a dedicated and searchable landing page on our site with contact info/map, business/profile video, and link to their site.
+- An authenticated/secure page that plays a video in a loop.
+- The ability for the owner to push specials/promotions to platform subscribed customers if they subscribed also to allow notifications from that store.
+- Call to action (phone/email).
+
+4. A local offers/promotions page that aggregates all the offers business owners publish (through the admin portal). A separate page per industry.
+- Business owners can publish offers/promotions through their profile page.
+    - Promotions contain a title, details, photo, price, valid until date.
+    - Multiple promotions are allowed (and encouraged).
+    - Promotions should have a call to action (CTA) button for real estate, retail (call/email). No CTA for restaurants.
+
+
+5. Admin panel
+    - Our admin capabilities
+    - Business owner's homepage with company details, owner details, and id of salesperson who on-boarded them.
+    - Business owner product uploads setion (product details, multimedia).
+    - Business owner's promotions section (single/multiple promotions).
+    - Business owner's membership section (renewal + payment should be automatic every three months unless cancelled).
+    - Contact section (for direct communication with us).
+
+Ok this is what I have to start with, I am sure there will be more as we get further into the project.
