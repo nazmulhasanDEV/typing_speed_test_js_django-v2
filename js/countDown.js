@@ -116,6 +116,8 @@ var duration = 0;
 
 const x = (button) => {
 
+    smaple_txt.querySelectorAll('span')[0].classList.add('current_target_span');
+
     // disabling "start typing button"
     button.disabled = true;
     button.style.opacity = '.3';
